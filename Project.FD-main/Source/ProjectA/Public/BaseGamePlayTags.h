@@ -1,0 +1,141 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "NativeGameplayTags.h"
+
+namespace BaseGamePlayTags
+{
+	//Input Tags =================================================================================
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Move)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Look)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Jump)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Run)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Evade)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Equip1)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Equip2)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_UnEquip)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_LightAttack_Axe)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_HeavyAttack_Axe)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Reload)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_ShootBullet)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Shouldering)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_ZoomIn)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Skill_SpawnSparkBall)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Skill_SpawnSparkRing)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Skill_SpawnSparkLaser)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Skill_Sprint)
+
+    //Player Tags =================================================================================
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Weapon_Axe)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Weapon_AR)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Weapon_SCR)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetBycaller_AttackType_Light)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetBycaller_AttackType_Heavy)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetBycaller_AttackType_Skill)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetBycaller_AttackType_Bullet)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetBycaller_UsingPassive)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetBycaller_GainingShield)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetBycaller_UsingMana)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetBycaller_GainingHeal)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Equip_Axe)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Unequip_Axe)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Equip_AR)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Equip_SCR)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Reload)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Shouldering)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_ZoomIn)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Attack_Light_Axe)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Attack_Heavy_Axe)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Attack_Bullet)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Attack_LandingSkill)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Attack_SpawnSparkBallSkill)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Attack_SpawnSparkRingSkill)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Attack_SpawnSparkLaserSkill)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Skill_SprintSkill)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_HitPause)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Evade)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_SkillHit_LandingSpark)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_SkillHit_SparkBall)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_SkillHit_SparkLaser)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_SkillHit_SparkRing)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_Hit_Bullet)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_Weapon_Equip)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_Weapon_UnEquip)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_HitPause)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_GetHealed)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_JumpToFinisher)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_Evading)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_LosingPassive)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_GainingPassive)
+
+    //Cooldown Tags =================================================================================
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Cooldown_Sprint)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Cooldown_SparkBall)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Cooldown_SparkRing)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Cooldown_SparkLaser)
+
+    //Enemy Tags =================================================================================
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Weapon)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Weapon_Left)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Weapon_Right)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Ability_Melee)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Ability_Ranged)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Ability_Reload)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Ability_Evade)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_Strafing)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_Alert)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_UnderAttack)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_MoveAttack)//12/16추가
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_ShieldDestroy)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_ShieldOpen)
+
+    //Boss Tag ========================================================================================
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Status_Teleport)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Status_Berserk)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Status_Idle)
+      
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Ability_PhotonCannon)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Ability_Promenade)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Ability_Teleport)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Ability_ElectricDischarging)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Ability_SummonMinions)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Ability_Berserk)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Boss_Ability_Stump)
+    
+        
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Ability_SummonEnemies)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Event_SummonEnemies)
+    //shared Tages =================================================================================
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Event_MeleeHit)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Event_ProjectileHit)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_SetByCaller_BaseDamage)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Ability_Death)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Status_Death)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Ability_HitReact)
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Event_HitReact)
+
+    PROJECTA_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Event_SpawnProjectile)//12/17추가
+    
+    
+}
