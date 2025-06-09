@@ -1,6 +1,7 @@
 ## (Team) The First **Descendant 모작(4주 / 3인)**
 
-Gameplay Ability System 기반의 3인칭 루터 슈터 액션 게임
+Gameplay Ability System 기반의 3인칭 루터 슈터 액션 게임으로
+포트폴리오의 목적으로 제작하였습니다.
 
 2024.12.09 ~ 2025.01.05
 
